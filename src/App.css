@@ -1,0 +1,80 @@
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--neutral--800);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--neutral--700);
+  border: 0.5px solid var(--neutral--800);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(0, 0, 0);
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: var(--gradient-color);
+}
+
+::-webkit-selection { /* Code for Firefox */
+  color: red;
+  background: green;
+}
+
+::selection {
+  color: red;
+  background: var(--gradient-color);
+}
+
+.gradient-1 {
+  color: transparent !important;
+  /* background: linear-gradient(90deg, #6a0e72, #099cfd, #ff0984); */
+background: var(--gradient-color) !important;
+background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+
+.fade-up {
+  opacity: 0;
+  transition: all .5s;
+  transform: translate(0, 10px);
+}
+
+.fade-up-show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.fade-in{
+  opacity: 0;
+  transition: all 1.2s;
+  filter: blur(5);
+}
+
+.fade-in-show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.page-not-found {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-weight: 200;
+  flex-direction: column;
+}
+
+.page-not-found a {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 50px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
